@@ -34,4 +34,25 @@
     <lastmod>2026-09-01</lastmod>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://lzammit.github.io/support/familyquest/fr/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lzammit.github.io/support/familyquest/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://lzammit.github.io/support/familyquest/fr/support.html"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lzammit.github.io/support/familyquest/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lzammit.github.io/support/familyquest/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://lzammit.github.io/support/familyquest/fr/privacy.html"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lzammit.github.io/support/familyquest/fr/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lzammit.github.io/support/familyquest/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://lzammit.github.io/support/familyquest/fr/delete-account.html"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.4</priority>
+  </url>
 </urlset>
