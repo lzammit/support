@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--
+  Both language versions, each declaring the other. The xhtml:link alternates
+  must appear on BOTH entries — a one-sided declaration is ignored, and the
+  pages then compete as duplicates.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lzammit.github.io/support/familyquest/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lzammit.github.io/support/familyquest/"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://lzammit.github.io/support/familyquest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lzammit.github.io/support/familyquest/"/>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lzammit.github.io/support/familyquest/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lzammit.github.io/support/familyquest/"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://lzammit.github.io/support/familyquest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lzammit.github.io/support/familyquest/"/>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

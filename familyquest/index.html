@@ -8,8 +8,20 @@
 <meta name="description" content="FamilyQuest is a free weekly chore chart and reward tracker for young children. Each child's avatar travels a quest map as they complete goals. Runs on iPhone, iPad, Apple TV, Fire tablet and Fire TV. No ads, no tracking, no accounts for kids.">
 <link rel="canonical" href="https://lzammit.github.io/support/familyquest/">
 
+<!--
+  hreflang, and it MUST be reciprocal: the French page points here and this
+  points there. A one-way declaration is discarded, and the two pages then
+  compete with each other as duplicates instead of being treated as one page in
+  two languages.
+-->
+<link rel="alternate" hreflang="en" href="https://lzammit.github.io/support/familyquest/">
+<link rel="alternate" hreflang="fr-CA" href="https://lzammit.github.io/support/familyquest/fr/">
+<link rel="alternate" hreflang="x-default" href="https://lzammit.github.io/support/familyquest/">
+
 <!-- Open Graph / social. Also what several AI assistants read first. -->
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_CA">
 <meta property="og:title" content="FamilyQuest — a chore chart your kids can watch on the TV">
 <meta property="og:description" content="A free weekly chore chart and reward tracker for young children, built for kids too young to read a list. Avatars travel a quest map toward a reward they chose. iPhone, iPad, Apple TV, Fire tablet and Fire TV.">
 <meta property="og:url" content="https://lzammit.github.io/support/familyquest/">
@@ -146,6 +158,8 @@
     -webkit-font-smoothing: antialiased;
   }
   .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 80px; }
+  .lang { font-size: 14px; color: var(--soft); margin: 0 0 26px; }
+  .lang a { color: var(--soft); }
   h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.12; margin: 0 0 14px;
        letter-spacing: -0.02em; text-wrap: balance; }
   h2 { font-size: 22px; margin: 46px 0 14px; letter-spacing: -0.01em; }
@@ -188,6 +202,8 @@
 </head>
 <body>
 <div class="wrap">
+
+  <p class="lang"><strong>English</strong> · <a href="fr/">Français</a></p>
 
   <h1>A chore chart your kids can watch on the TV</h1>
   <p class="lede">
@@ -294,7 +310,8 @@
     </details>
     <details>
       <summary>Is it available in French?</summary>
-      <p>Yes, English and Canadian French, on every platform.</p>
+      <p>Yes, English and Canadian French, on every platform. This page is
+      also <a href="fr/">available in French</a>.</p>
     </details>
     <details>
       <summary>What happens to a week after it ends?</summary>

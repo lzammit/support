@@ -31,7 +31,8 @@ remote.
 
 ## Links
 
-- Home: https://lzammit.github.io/support/familyquest/
+- Home (English): https://lzammit.github.io/support/familyquest/
+- Accueil (français): https://lzammit.github.io/support/familyquest/fr/
 - iPhone and iPad: https://apps.apple.com/us/app/familyquest/id6793959911
 - Apple TV: https://apps.apple.com/us/app/familyquest-tv/id6793960645
 - Support: https://lzammit.github.io/support/familyquest/support.html
