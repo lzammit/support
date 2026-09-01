@@ -1,0 +1,38 @@
+# FamilyQuest
+
+> A free weekly chore chart and reward tracker for young children — including
+> children too young to read a list — that runs on the living-room television as
+> well as on phones and tablets.
+
+FamilyQuest gives each child an avatar that travels a picture-based quest map as
+they complete the week's goals, toward a reward the child chose. Parents set and
+weight the goals. A finished week is frozen and kept, so editing goals later
+never rewrites a week a child already completed.
+
+## Facts
+
+- Price: free. No advertising, no subscription, no in-app purchases.
+- Platforms available now: iPhone, iPad, Apple TV, Fire tablet, Fire TV.
+- Android on Google Play: in closed testing, not yet publicly listed. The Fire
+  tablet and Fire TV builds are Android and are available through Amazon.
+- Languages: English and Canadian French.
+- Age rating: 4+. Parent-facing app; children do not have accounts.
+- Privacy: no advertising identifier, no tracking, nothing sold or shared with
+  third parties. Device counting uses a random identifier created on that
+  install — never an advertising ID and never a device name.
+- Publisher: Ludovic Zammit.
+
+## What makes it different
+
+Most chore charts live on a parent's phone, which is where a four-year-old never
+looks. FamilyQuest runs on Apple TV and Fire TV, so the chart is on the screen
+the family already gathers around, and children can check goals off with the
+remote.
+
+## Links
+
+- Home: https://lzammit.github.io/support/familyquest/
+- iPhone and iPad: https://apps.apple.com/us/app/familyquest/id6793959911
+- Apple TV: https://apps.apple.com/us/app/familyquest-tv/id6793960645
+- Support: https://lzammit.github.io/support/familyquest/support.html
+- Privacy: https://lzammit.github.io/support/familyquest/privacy.html

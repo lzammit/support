@@ -1,0 +1,43 @@
+# FamilyQuest — https://lzammit.github.io/support/familyquest/
+#
+# NOTE: a robots.txt is only obeyed at a DOMAIN ROOT. This file sits at
+# /support/familyquest/robots.txt and is therefore IGNORED by every crawler.
+# It is kept here so it is already correct if these pages ever move to a real
+# domain of their own, which is the only way to control the root on GitHub
+# Pages without owning an lzammit.github.io user-page repo.
+#
+# Nothing here is blocked. AI crawlers are named explicitly because being
+# absent from their index is the default outcome for a site nobody has thought
+# about, and an app that wants to be recommended has to be readable first.
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://lzammit.github.io/support/familyquest/sitemap.xml

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FamilyQuest — a chore chart your kids can watch on the TV</title>
+<meta name="description" content="FamilyQuest is a free weekly chore chart and reward tracker for young children. Each child's avatar travels a quest map as they complete goals. Runs on iPhone, iPad, Apple TV, Fire tablet and Fire TV. No ads, no tracking, no accounts for kids.">
+<link rel="canonical" href="https://lzammit.github.io/support/familyquest/">
+
+<!-- Open Graph / social. Also what several AI assistants read first. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="FamilyQuest — a chore chart your kids can watch on the TV">
+<meta property="og:description" content="A free weekly chore chart and reward tracker for young children, built for kids too young to read a list. Avatars travel a quest map toward a reward they chose. iPhone, iPad, Apple TV, Fire tablet and Fire TV.">
+<meta property="og:url" content="https://lzammit.github.io/support/familyquest/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!--
+  Structured data. This is the part that decides whether a search engine or an
+  AI assistant can state facts about the app rather than guess at them: name,
+  platforms, price, category, publisher, and a FAQ in a form both can quote.
+  Every value here must match the store listings exactly — a contradiction
+  between this and the App Store is worse than saying nothing.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://lzammit.github.io/support/familyquest/#app",
+      "name": "FamilyQuest",
+      "alternateName": "FamilyQuest: Kids Chore Chart",
+      "applicationCategory": "LifestyleApplication",
+      "applicationSubCategory": "Chore chart and reward tracker for children",
+      "operatingSystem": "iOS 17+, iPadOS 17+, tvOS 17+, Android 8+, Fire OS 6+",
+      "inLanguage": ["en", "fr-CA"],
+      "isFamilyFriendly": true,
+      "contentRating": "4+",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": { "@id": "https://lzammit.github.io/support/familyquest/#publisher" },
+      "publisher": { "@id": "https://lzammit.github.io/support/familyquest/#publisher" },
+      "description": "A weekly chore chart and reward tracker designed for children too young to read a list. Each child has an avatar that travels along a themed quest map as goals are completed through the week, toward a reward the child chose. Parents set the goals and weight the ones that matter most. Runs on phones and tablets and on the living-room television.",
+      "featureList": [
+        "Weekly goals with simple check-offs or a four-level rating",
+        "A quest map per child that fills in as the week progresses",
+        "Rewards the child picks, plus a bonus crown for going further",
+        "Goal weighting, pause for holidays, and end dates for things that finish",
+        "Runs on the television — Apple TV and Fire TV",
+        "English and Canadian French"
+      ],
+      "downloadUrl": "https://apps.apple.com/us/app/familyquest/id6793959911",
+      "sameAs": [
+        "https://apps.apple.com/us/app/familyquest/id6793959911",
+        "https://apps.apple.com/us/app/familyquest-tv/id6793960645"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://lzammit.github.io/support/familyquest/#publisher",
+      "name": "Ludovic Zammit"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lzammit.github.io/support/familyquest/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is FamilyQuest free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. FamilyQuest is free, with no advertising, no subscription and no in-app purchases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a chore chart app that works on a TV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FamilyQuest runs on Apple TV and Fire TV as well as on phones and tablets. The television version shows the whole family's progress on one screen and lets children check goals off with the remote, which is the point: a chart nobody looks at does not change behaviour, and a television is already in the room."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work for a child who cannot read yet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That is what it was built for. Each child has an avatar and a picture-based quest map rather than a written list, so a three or four year old can see how far along the week they are without reading anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does FamilyQuest collect data about my children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No advertising identifier is collected, no data is sold or shared with third parties, and children do not have accounts. A parent signs in; the children exist only inside that family's own data. The app records which devices a family uses, using a random identifier created on that install, in order to count devices — never an advertising ID and never a device name."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can two parents use it on separate phones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A second parent joins the same family with a six-digit invite code, and both phones stay in sync. A television is added by pairing it with a code shown on screen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FamilyQuest available in French?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in English and Canadian French, on every platform."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --ground: #fdfaf7;
+    --panel: #ffffff;
+    --ink: #221a1e;
+    --soft: #6f6269;
+    --line: #ece2da;
+    --coral: #d9503f;
+    --deep: #1e5b4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #16121a; --panel: #1f1a24; --ink: #f4eeea; --soft: #a89aa2;
+      --line: #302834; --coral: #ff7a66; --deep: #6fc4b2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 80px; }
+  h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.12; margin: 0 0 14px;
+       letter-spacing: -0.02em; text-wrap: balance; }
+  h2 { font-size: 22px; margin: 46px 0 14px; letter-spacing: -0.01em; }
+  h3 { font-size: 17px; margin: 26px 0 6px; }
+  p { margin: 0 0 16px; }
+  .lede { font-size: 19px; color: var(--soft); margin-bottom: 30px; }
+  a { color: var(--coral); }
+
+  .stores { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 8px; padding: 0; list-style: none; }
+  .stores a {
+    display: inline-block; text-decoration: none; color: var(--panel);
+    background: var(--ink); padding: 11px 18px; border-radius: 8px;
+    font-weight: 600; font-size: 15px;
+  }
+  .stores a:hover { background: var(--coral); }
+  .note { font-size: 14px; color: var(--soft); }
+
+  .how { list-style: none; padding: 0; margin: 0; counter-reset: step; }
+  .how li { position: relative; padding-left: 44px; margin-bottom: 20px; }
+  .how li::before {
+    counter-increment: step; content: counter(step);
+    position: absolute; left: 0; top: 0;
+    width: 30px; height: 30px; border-radius: 50%;
+    background: var(--coral); color: #fff;
+    display: grid; place-items: center; font-weight: 700; font-size: 15px;
+  }
+
+  .faq { border-top: 1px solid var(--line); }
+  .faq details { border-bottom: 1px solid var(--line); padding: 14px 0; }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq summary:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
+  .faq p { margin: 10px 0 0; color: var(--soft); }
+
+  .privacy { background: var(--panel); border: 1px solid var(--line);
+             border-radius: 12px; padding: 20px 24px; }
+  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line);
+           font-size: 14px; color: var(--soft); }
+  footer a { color: var(--soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>A chore chart your kids can watch on the TV</h1>
+  <p class="lede">
+    FamilyQuest turns the week's routines into a quest each child can see — even
+    a child too young to read a list. It's free, and it runs on the television
+    as well as on your phone.
+  </p>
+
+  <ul class="stores">
+    <li><a href="https://apps.apple.com/us/app/familyquest/id6793959911">iPhone &amp; iPad</a></li>
+    <li><a href="https://apps.apple.com/us/app/familyquest-tv/id6793960645">Apple TV</a></li>
+    <li><a href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest">Fire tablet</a></li>
+    <li><a href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest.tv">Fire TV</a></li>
+  </ul>
+  <p class="note">Free. No ads, no subscription, no in-app purchases.</p>
+
+  <h2>Why a television</h2>
+  <p>
+    Most chore charts live on a parent's phone, which is the one place a
+    four-year-old never looks. A paper chart on the fridge works better for
+    exactly that reason — it is in the room. FamilyQuest puts the chart on the
+    screen the family already gathers around: each child's progress is visible
+    without anyone asking, and goals can be checked off with the remote.
+  </p>
+
+  <h2>Built for children who can't read yet</h2>
+  <p>
+    Instead of a written list, each child has an avatar that travels along a
+    themed quest map. Completing goals moves them forward; reaching the finish
+    line earns the reward they chose themselves, and going further earns a crown
+    and a bonus. A three-year-old can tell how their week is going at a glance,
+    which is the whole point.
+  </p>
+
+  <h2>How it works</h2>
+  <ol class="how">
+    <li>
+      <h3>Add your children and pick their goals</h3>
+      <p>Brushing teeth twice a day, tidying up, eating the vegetables. Simple
+      check-offs, or a friendly four-level rating for the fuzzier ones like
+      "how was sharing today?".</p>
+    </li>
+    <li>
+      <h3>Let them choose the reward</h3>
+      <p>A child who picked the reward cares about the map. Weight the goals
+      that matter most so they count for more, pause one for a holiday, or give
+      it an end date if it finishes — school, daycare, a swimming term.</p>
+    </li>
+    <li>
+      <h3>Watch the week fill in</h3>
+      <p>On a phone, a tablet, or the TV. When the week ends the result is
+      frozen and kept, so a good week stays a good week even if you change the
+      goals afterwards.</p>
+    </li>
+  </ol>
+
+  <h2>Where it runs</h2>
+  <p>
+    iPhone, iPad, Apple TV, Fire tablet and Fire TV — in English and Canadian
+    French. Two parents can share one family with a six-digit invite code, and a
+    television joins by pairing with a code on screen.
+  </p>
+
+  <h2 id="privacy">Privacy</h2>
+  <div class="privacy">
+    <p>
+      <strong>Children don't have accounts.</strong> A parent signs in; the
+      children exist only inside that family's own data.
+    </p>
+    <p>
+      <strong>No advertising identifier, ever.</strong> No tracking, and nothing
+      sold or shared with third parties. The app records how many devices a
+      family uses, using a random identifier created on that install — never an
+      advertising ID, and never your device's name.
+    </p>
+    <p style="margin-bottom:0">
+      Full detail in the <a href="privacy.html">privacy policy</a>.
+    </p>
+  </div>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details>
+      <summary>Is it really free?</summary>
+      <p>Yes — free, with no advertising, no subscription and no in-app
+      purchases.</p>
+    </details>
+    <details>
+      <summary>Does it work for a child who can't read?</summary>
+      <p>That is what it was built for. The quest map is pictures, not text, so a
+      three or four year old can see their own progress without reading
+      anything.</p>
+    </details>
+    <details>
+      <summary>Can both parents use it?</summary>
+      <p>Yes. A second parent joins the same family with a six-digit invite code
+      and both phones stay in sync.</p>
+    </details>
+    <details>
+      <summary>Is there an Android version?</summary>
+      <p>Android is in closed testing and not yet on Google Play. The Fire
+      tablet and Fire TV versions are Android builds and are available now
+      through the Amazon Appstore.</p>
+    </details>
+    <details>
+      <summary>Is it available in French?</summary>
+      <p>Yes, English and Canadian French, on every platform.</p>
+    </details>
+    <details>
+      <summary>What happens to a week after it ends?</summary>
+      <p>It is frozen and kept as it was. Editing goals later never rewrites a
+      week your child already finished.</p>
+    </details>
+  </div>
+
+  <footer>
+    <p>
+      FamilyQuest — <a href="support.html">Support</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="delete-account.html">Delete your account</a>
+    </p>
+    <p>© 2026 Ludovic Zammit</p>
+  </footer>
+
+</div>
+</body>
+</html>
