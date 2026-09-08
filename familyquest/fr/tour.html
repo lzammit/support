@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FamilyQuest — voyez comment ça marche</title>
+<meta name="description" content="FamilyQuest écran par écran : la carte de quête de la semaine, valider les objectifs, le Mode enfant, la cérémonie du dimanche, et la même chose sur votre téléviseur. Gratuit, sans publicité, sans pistage.">
+<link rel="canonical" href="https://lzammit.github.io/support/familyquest/fr/tour.html">
+
+<!--
+  hreflang doit être RÉCIPROQUE : la page anglaise pointe ici et cette page
+  pointe vers elle. Une seule des deux directions et le moteur de recherche
+  ignore la paire, ce qui est pire que de ne rien déclarer.
+-->
+<link rel="alternate" hreflang="en" href="https://lzammit.github.io/support/familyquest/tour.html">
+<link rel="alternate" hreflang="fr-CA" href="https://lzammit.github.io/support/familyquest/fr/tour.html">
+<link rel="alternate" hreflang="x-default" href="https://lzammit.github.io/support/familyquest/tour.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:title" content="FamilyQuest — voyez comment ça marche">
+<meta property="og:description" content="Un tableau de tâches que vos enfants suivent à la télé. Voici l'application au complet, écran par écran.">
+<meta property="og:url" content="https://lzammit.github.io/support/familyquest/fr/tour.html">
+<meta property="og:video" content="https://lzammit.github.io/support/familyquest/shots/familyquest-demo.mp4">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "FamilyQuest — valider une semaine",
+  "description": "Capture d'écran de FamilyQuest sur iPhone : la carte de quête d'un enfant, valider les objectifs de la journée, l'avatar qui avance sur la carte, et le choix d'objectifs dans la liste intégrée.",
+  "contentUrl": "https://lzammit.github.io/support/familyquest/shots/familyquest-demo.mp4",
+  "thumbnailUrl": "https://lzammit.github.io/support/familyquest/shots/ios-kid-detail.png",
+  "uploadDate": "2026-09-02",
+  "duration": "PT1M2S",
+  "inLanguage": "fr-CA"
+}
+</script>
+
+<style>
+  :root {
+    --ground: #fdfaf7;
+    --panel: #ffffff;
+    --ink: #221a1e;
+    --soft: #6f6269;
+    --line: #ece2da;
+    --coral: #d9503f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #16121a; --panel: #1f1a24; --ink: #f4eeea; --soft: #a89aa2;
+      --line: #302834; --coral: #ff7a66;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 48px 22px 80px; }
+  .lang { font-size: 14px; color: var(--soft); margin: 0 0 24px; }
+  .lang a { color: var(--soft); }
+  h1 { font-size: clamp(28px, 5.5vw, 42px); line-height: 1.14; margin: 0 0 12px;
+       letter-spacing: -0.02em; text-wrap: balance; }
+  .lede { font-size: 19px; color: var(--soft); margin: 0 0 34px; max-width: 62ch; }
+  a { color: var(--coral); }
+
+  video { width: 100%; max-width: 380px; border-radius: 22px; display: block;
+          border: 1px solid var(--line); background: #000; }
+  .videowrap { display: flex; flex-direction: column; align-items: center; gap: 10px;
+               margin: 0 0 46px; }
+  .videowrap p { margin: 0; font-size: 14px; color: var(--soft); text-align: center; }
+
+  .step { display: grid; grid-template-columns: 300px 1fr; gap: 34px;
+          align-items: start; margin: 0 0 52px; }
+  .step img { width: 100%; border-radius: 20px; border: 1px solid var(--line);
+              display: block; }
+  .step.tv { grid-template-columns: 1fr; }
+  .step.tv img { border-radius: 12px; }
+  .step h2 { font-size: 22px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .step p { margin: 0 0 12px; color: var(--soft); }
+  .step .why { font-size: 15px; color: var(--ink); border-left: 3px solid var(--coral);
+               padding-left: 14px; }
+  @media (max-width: 700px) {
+    .step { grid-template-columns: 1fr; gap: 16px; }
+    .step img { max-width: 320px; margin: 0 auto; }
+  }
+
+  .stores { display: flex; flex-wrap: wrap; gap: 10px; margin: 40px 0 10px; padding: 0; list-style: none; }
+  .stores a { display: inline-block; text-decoration: none; color: var(--panel);
+              background: var(--ink); padding: 11px 18px; border-radius: 8px;
+              font-weight: 600; font-size: 15px; }
+  .stores a:hover { background: var(--coral); }
+  .note { font-size: 14px; color: var(--soft); }
+  footer { margin-top: 54px; padding-top: 22px; border-top: 1px solid var(--line);
+           font-size: 14px; color: var(--soft); }
+  footer a { color: var(--soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="lang"><a href="./">← FamilyQuest</a> · <a href="../tour.html">English</a></p>
+
+  <h1>Voyez comment ça marche</h1>
+  <p class="lede">
+    L'application au complet, écran par écran. Rien ici n'est une maquette —
+    ce sont de vrais écrans, avec une vraie semaine dedans.
+  </p>
+
+  <div class="videowrap">
+    <video controls playsinline preload="metadata" poster="../shots/ios-kid-detail.png">
+      <source src="../shots/familyquest-demo.mp4" type="video/mp4">
+      Votre navigateur ne peut pas lire cette vidéo. Les captures ci-dessous montrent la même chose.
+    </video>
+    <p>Une minute sur un iPhone : la semaine d'un enfant, valider la journée, et la liste d'objectifs.</p>
+  </div>
+
+  <div class="step">
+    <img src="../shots/ios-home.png" alt="L'écran de la famille, avec deux enfants, leurs avatars et la progression de la semaine" loading="lazy">
+    <div>
+      <h2>Toute la famille sur un écran</h2>
+      <p>
+        Chaque enfant a un avatar et un pourcentage pour la semaine. En dessous,
+        la carte de quête familiale — où toute la famille en est, ensemble.
+      </p>
+      <p class="why">
+        La semaine va du lundi au dimanche et la bande montre les journées déjà
+        inscrites : vous voyez d'un coup d'œil si hier a été oublié.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <img src="../shots/ios-kid-detail.png" alt="L'écran d'un enfant : sa carte de quête, la récompense visée, et la grille des objectifs de la semaine" loading="lazy">
+    <div>
+      <h2>Un enfant, une carte</h2>
+      <p>
+        L'avatar avance sur la carte à mesure que les objectifs sont validés. La
+        tente est la ligne d'arrivée — la récompense qu'il a choisie — et la
+        couronne plus loin est le bonus pour aller au-delà.
+      </p>
+      <p class="why">
+        Sous la carte, une rangée par objectif et une case par jour. « 2/2 » veut
+        dire se brosser les dents deux fois ce jour-là. Touchez une case pour l'inscrire.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <img src="../shots/ios-kid-mode.png" alt="Le Mode enfant : un écran simplifié qu'un enfant peut utiliser lui-même" loading="lazy">
+    <div>
+      <h2>Le Mode enfant</h2>
+      <p>
+        Une version plus grande et plus simple qu'un enfant peut utiliser
+        lui-même, sans pouvoir toucher à ce qu'il ne doit pas. Lui passer le
+        téléphone, c'est justement l'idée.
+      </p>
+      <p class="why">
+        Tout ce qui change les réglages est derrière une question d'adulte : un
+        enfant de quatre ans peut valider ses objectifs sans rien effacer.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <img src="../shots/ios-ceremony.png" alt="La cérémonie de fin de semaine, avec ce que chaque enfant a obtenu" loading="lazy">
+    <div>
+      <h2>Le dimanche, on compte</h2>
+      <p>
+        Quand la semaine se termine, le résultat est figé et conservé : ce que
+        chaque enfant a obtenu, s'il a atteint sa récompense, et s'il a pris la couronne.
+      </p>
+      <p class="why">
+        Figé veut dire <em>figé</em>. Modifier les objectifs plus tard ne réécrit
+        jamais une semaine déjà terminée — une bonne semaine reste une bonne semaine.
+      </p>
+    </div>
+  </div>
+
+  <div class="step tv">
+    <img src="../shots/tv-dashboard.png" alt="FamilyQuest sur un téléviseur, avec la semaine de toute la famille sur un seul écran" loading="lazy">
+    <div>
+      <h2>Et la même chose sur le téléviseur</h2>
+      <p>
+        C'est la partie que presque aucune autre application de tâches ne fait.
+        Sur Apple TV ou Fire TV, la semaine de toute la famille est sur l'écran
+        autour duquel tout le monde se réunit déjà, et les objectifs se valident
+        avec la télécommande.
+      </p>
+      <p class="why">
+        Un tableau sur le téléphone d'un parent est au seul endroit qu'un enfant
+        de quatre ans ne regarde jamais. C'est la raison d'être de l'application.
+      </p>
+    </div>
+  </div>
+
+  <div class="step tv">
+    <img src="../shots/tv-ceremony.png" alt="La cérémonie de fin de semaine sur un téléviseur" loading="lazy">
+    <div>
+      <h2>Y compris le dimanche soir</h2>
+      <p>
+        Les résultats de la semaine arrivent aussi sur la télé, ce qui transforme
+        un chiffre en quelque chose que la famille regarde ensemble.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <img src="../shots/ios-avatar-editor.png" alt="Le créateur d'avatar, avec la peau, les cheveux, les yeux et les vêtements" loading="lazy">
+    <div>
+      <h2>Ils créent leur personnage</h2>
+      <p>
+        Peau, cheveux, yeux, bouche, chandail — ou une photo, s'ils préfèrent se
+        voir eux-mêmes sur la carte.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <img src="../shots/ios-home-french.png" alt="Le même écran familial en français" loading="lazy">
+    <div>
+      <h2>En français et en anglais</h2>
+      <p>
+        L'application au complet, dans les deux, y compris sur le téléviseur.
+        Réglez-le une fois pour la famille et tous les appareils suivent.
+      </p>
+      <p class="why">
+        Du français canadien, pas une traduction automatique de l'anglais.
+      </p>
+    </div>
+  </div>
+
+  <ul class="stores">
+    <li><a href="https://apps.apple.com/ca/app/familyquest/id6793959911">iPhone et iPad</a></li>
+    <li><a href="https://apps.apple.com/ca/app/familyquest-tv/id6793960645">Apple TV</a></li>
+    <li><a href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest">Tablette Fire</a></li>
+    <li><a href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest.tv">Fire TV</a></li>
+  </ul>
+  <p class="note">Gratuit. Sans publicité, sans abonnement, sans achat intégré, et rien n'est pisté.</p>
+
+  <footer>
+    <p>
+      <a href="./">FamilyQuest</a> ·
+      <a href="support.html">Soutien</a> ·
+      <a href="privacy.html">Confidentialité</a> ·
+      <a href="../tour.html">English</a>
+    </p>
+    <p>© 2026 Ludovic Zammit</p>
+  </footer>
+
+</div>
+</body>
+</html>
