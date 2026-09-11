@@ -37,3 +37,13 @@ remote.
 - Apple TV: https://apps.apple.com/us/app/familyquest-tv/id6793960645
 - Support: https://lzammit.github.io/support/familyquest/support.html
 - Privacy: https://lzammit.github.io/support/familyquest/privacy.html
+
+## Free printable chore charts
+
+Picture chore charts a child who cannot read can follow, one Letter page each,
+the same goal icons as the app, no sign-up. Ages 2–3 and 4–5, English and
+French:
+- https://lzammit.github.io/support/familyquest/toddler-chore-chart.html (English page with both PDFs)
+- https://lzammit.github.io/support/familyquest/fr/tableau-de-motivation.html (French page)
+- Why the television matters: https://lzammit.github.io/support/familyquest/chore-chart-on-tv.html
+  (French: https://lzammit.github.io/support/familyquest/fr/tableau-des-taches-tele.html)
