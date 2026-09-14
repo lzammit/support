@@ -144,202 +144,336 @@
 }
 </script>
 
-<style>
-  :root {
-    --ground: #fdfaf7;
-    --panel: #ffffff;
-    --ink: #221a1e;
-    --soft: #6f6269;
-    --line: #ece2da;
-    --coral: #d9503f;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --ground: #16121a; --panel: #1f1a24; --ink: #f4eeea; --soft: #a89aa2;
-      --line: #302834; --coral: #ff7a66;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--ground); color: var(--ink);
-    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 80px; }
-  .lang { font-size: 14px; color: var(--soft); margin: 0 0 26px; }
-  .lang a { color: var(--soft); }
-  h1 { font-size: clamp(28px, 5.6vw, 42px); line-height: 1.14; margin: 0 0 14px;
-       letter-spacing: -0.02em; text-wrap: balance; }
-  h2 { font-size: 22px; margin: 46px 0 14px; letter-spacing: -0.01em; }
-  h3 { font-size: 17px; margin: 26px 0 6px; }
-  p { margin: 0 0 16px; }
-  .lede { font-size: 19px; color: var(--soft); margin-bottom: 30px; }
-  a { color: var(--coral); }
-
-  .stores { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 8px; padding: 0; list-style: none; }
-  .stores a {
-    display: inline-block; text-decoration: none; color: var(--panel);
-    background: var(--ink); padding: 11px 18px; border-radius: 8px;
-    font-weight: 600; font-size: 15px;
-  }
-  .stores a:hover { background: var(--coral); }
-  .note { font-size: 14px; color: var(--soft); }
-
-  .how { list-style: none; padding: 0; margin: 0; counter-reset: step; }
-  .how li { position: relative; padding-left: 44px; margin-bottom: 20px; }
-  .how li::before {
-    counter-increment: step; content: counter(step);
-    position: absolute; left: 0; top: 0;
-    width: 30px; height: 30px; border-radius: 50%;
-    background: var(--coral); color: #fff;
-    display: grid; place-items: center; font-weight: 700; font-size: 15px;
-  }
-
-  .faq { border-top: 1px solid var(--line); }
-  .faq details { border-bottom: 1px solid var(--line); padding: 14px 0; }
-  .faq summary { cursor: pointer; font-weight: 600; }
-  .faq summary:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
-  .faq p { margin: 10px 0 0; color: var(--soft); }
-
-  .privacy { background: var(--panel); border: 1px solid var(--line);
-             border-radius: 12px; padding: 20px 24px; }
-  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line);
-           font-size: 14px; color: var(--soft); }
-  footer a { color: var(--soft); }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
 </head>
-<body>
-<div class="wrap">
+<body class="home">
+<a class="skip" href="#main">Aller au contenu</a>
 
-  <p class="lang"><a href="../">English</a> · <strong>Français</strong></p>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="./" aria-label="FamilyQuest, accueil">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="8" fill="#4fc46a"/><path d="M6 20c4-8 8 4 12-2s2-8 4-10" fill="none" stroke="#f1e1bd" stroke-width="3.2" stroke-linecap="round"/><circle cx="20" cy="15" r="3.2" fill="#fff"/><circle cx="20" cy="15" r="1.6" fill="#f0655e"/></svg>
+      <span>FamilyQuest</span>
+    </a>
+    <nav class="links" aria-label="Site">
+      <a href="tour.html">Comment ça marche</a>
+      <a href="tableau-de-motivation.html">Tableau à imprimer</a>
+      <a href="#confidentialite">Confidentialité</a>
+      <a href="support.html">Soutien</a>
+    </nav>
+    <div class="nav-right">
+      <a class="lang-toggle" href="../" lang="en" hreflang="en">English</a>
+      <a class="btn btn-primary btn-sm" href="#get">Obtenir l'app</a>
+    </div>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-nav" class="mobile-nav">
+    <a href="tour.html">Comment ça marche</a>
+    <a href="tableau-de-motivation.html">Tableau à imprimer</a>
+    <a href="#confidentialite">Confidentialité</a>
+    <a href="support.html">Soutien</a>
+    <a href="../" lang="en" hreflang="en">English</a>
+    <a class="btn btn-primary" href="#get">Obtenir l'app</a>
+  </div>
+</header>
 
-  <h1>Un tableau de tâches que vos enfants suivent à la télé</h1>
-  <p class="lede">
-    FamilyQuest transforme la routine de la semaine en une quête que chaque
-    enfant peut voir — même un enfant trop jeune pour lire une liste. C'est
-    gratuit, et ça fonctionne sur le téléviseur autant que sur votre téléphone.
-  </p>
+<main id="main">
 
-  <ul class="stores">
-    <li><a href="https://apps.apple.com/ca/app/familyquest/id6793959911">iPhone et iPad</a></li>
-    <li><a href="https://apps.apple.com/ca/app/familyquest-tv/id6793960645">Apple TV</a></li>
-    <li><a href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest">Tablette Fire</a></li>
-    <li><a href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest.tv">Fire TV</a></li>
+<section class="hero">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Pour les enfants trop jeunes pour lire une liste</p>
+      <h1>Le tableau de tâches que vos enfants <em>suivent à la télé</em></h1>
+      <p class="lede">Chaque enfant a un avatar qui avance sur une carte en images à mesure que la routine de la semaine se fait. Les parents gèrent tout depuis leur téléphone. Toute la famille regarde sur le téléviseur.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/ca/app/familyquest/id6793959911">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.6-1-2.6-3.9zM14.1 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4z"/></svg>
+          Obtenir pour iPhone
+        </a>
+        <a class="btn btn-ghost" href="tour.html">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+          Voir la visite d'une minute
+        </a>
+      </div>
+      <ul class="platforms">
+        <li><span class="also">Aussi sur</span> <a href="https://apps.apple.com/ca/app/familyquest-tv/id6793960645">Apple TV</a></li>
+        <li><a href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest">tablette Fire</a></li>
+        <li><a href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest.tv">Fire TV</a></li>
+        <li><a href="https://apps.apple.com/ca/app/familyquest/id6793959911">iPad</a></li>
+      </ul>
+      <p class="fine">Gratuit. Sans publicité, sans abonnement, sans achat intégré. Les enfants n'ont jamais de compte.</p>
+    </div>
+
+    <div class="hero-demo">
+      <div class="tv" id="demo">
+        <div class="tv-head">
+          <span class="tv-title">Quête familiale</span>
+          <span class="tv-hint" id="hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11m0-3a1.5 1.5 0 0 1 3 0v3m0-1.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-1.2a6 6 0 0 1-5-2.7L3.5 14a1.6 1.6 0 0 1 2.6-1.8L9 15"/></svg>Touchez un jour pour le cocher</span>
+        </div>
+        <p class="today-label" aria-hidden="true">Jeudi</p>
+        <ol class="week" aria-label="Les jours de la semaine. Appuyez sur un jour pour le cocher ou le décocher.">
+          <li><button class="day" type="button" style="--c:var(--mon)" aria-pressed="true" aria-label="Lundi"><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><span class="day-name" aria-hidden="true">Lun</span></li>
+          <li><button class="day" type="button" style="--c:var(--tue)" aria-pressed="true" aria-label="Mardi"><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><span class="day-name" aria-hidden="true">Mar</span></li>
+          <li><button class="day" type="button" style="--c:var(--wed)" aria-pressed="true" aria-label="Mercredi"><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><span class="day-name" aria-hidden="true">Mer</span></li>
+          <li><button class="day today" type="button" style="--c:var(--thu)" aria-pressed="false" aria-label="Jeudi, aujourd'hui"><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><span class="day-name on" aria-hidden="true">Jeu</span></li>
+          <li><button class="day" type="button" style="--c:var(--fri)" aria-pressed="false" aria-label="Vendredi"><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><span class="day-name" aria-hidden="true">Ven</span></li>
+          <li class="wkd">
+            <svg class="sunny" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <div><button class="day" type="button" style="--c:var(--wkd)" aria-pressed="false" aria-label="Samedi"><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><span class="day-name" aria-hidden="true">Sam</span></div>
+            <div><button class="day" type="button" style="--c:var(--wkd-2)" aria-pressed="false" aria-label="Dimanche"><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><span class="day-name" aria-hidden="true">Dim</span></div>
+          </li>
+        </ol>
+        <p class="sleeps" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+          <span>2 dodos avant le week-end</span>
+        </p>
+
+        <div class="map">
+          <svg viewBox="0 0 640 380" role="img" aria-labelledby="map-title">
+            <title id="map-title">Une carte de quête. L'avatar suit un sentier sinueux depuis le drapeau de départ, passe la récompense à la ligne d'arrivée et va jusqu'à la couronne.</title>
+            <defs>
+              <clipPath id="face-clip"><circle r="22"/></clipPath>
+              <symbol id="tree" viewBox="0 0 60 72"><rect x="26" y="44" width="8" height="26" rx="3" fill="#8a5a2b"/><circle cx="30" cy="30" r="26" fill="#3fae5f"/><circle cx="21" cy="23" r="10" fill="#5cc47a" opacity=".75"/></symbol>
+            </defs>
+            <rect width="640" height="380" fill="#9cd97f"/>
+            <circle cx="120" cy="320" r="130" fill="#a9e08c" opacity=".9"/>
+            <circle cx="520" cy="70" r="150" fill="#a9e08c" opacity=".8"/>
+            <circle cx="330" cy="210" r="95" fill="#8fd273" opacity=".55"/>
+            <circle cx="74" cy="58" r="44" fill="#ffd54a" opacity=".25"/>
+            <circle cx="74" cy="58" r="30" fill="#ffd54a"/>
+            <path d="M62 318C150 372 290 356 372 312S540 262 566 214 480 134 356 138 118 150 96 118 170 56 292 52 520 52 584 66" fill="none" stroke="#b9885a" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="trail" d="M62 318C150 372 290 356 372 312S540 262 566 214 480 134 356 138 118 150 96 118 170 56 292 52 520 52 584 66" fill="none" stroke="#f1e1bd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+            <use href="#tree" x="150" y="220" width="60" height="72"/>
+            <use href="#tree" x="470" y="280" width="66" height="79"/>
+            <use href="#tree" x="590" y="130" width="52" height="62"/>
+            <use href="#tree" x="20" y="180" width="54" height="65"/>
+            <use href="#tree" x="380" y="190" width="48" height="58"/>
+            <use href="#tree" x="220" y="70" width="44" height="53"/>
+            <use href="#tree" x="540" y="300" width="44" height="53"/>
+            <circle cx="250" cy="300" r="16" fill="#6dbf5e"/><circle cx="440" cy="120" r="13" fill="#6dbf5e"/><circle cx="130" cy="130" r="11" fill="#6dbf5e"/>
+            <g id="start-flag" aria-hidden="true"><line x1="0" y1="0" x2="0" y2="-40" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/><path d="M0-40h24l-6 8 6 8H0z" fill="#fff"/></g>
+            <g id="finish" class="marker" aria-hidden="true">
+              <line x1="0" y1="0" x2="0" y2="-40" stroke="#1b2130" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M0-40h26v18H0z" fill="#fff"/><path d="M0-40h6.5v6H0zM13-40h6.5v6H13zM6.5-34H13v6H6.5zM19.5-34H26v6h-6.5zM0-28h6.5v6H0zM13-28h6.5v6H13z" fill="#1b2130"/>
+              <g transform="translate(0,-68)"><circle class="halo" r="24" fill="#fff"/><path d="M12 4 3 20h18L12 4zm0 6 4 10H8l4-10z" fill="#f0655e" transform="translate(-12,-12)"/></g>
+            </g>
+            <g id="crown" class="marker" aria-hidden="true"><circle class="halo" r="24" fill="#fff"/><path d="M3 18h18l1.5-10-5 3.5L12 5l-5.5 6.5-5-3.5z" fill="#f2b93b" transform="translate(-13,-12) scale(1.1)"/></g>
+            <g id="walker" class="walker" transform="translate(372,312)"><circle r="27" fill="#fff"/><image href="../img/kid-pigtails.webp" x="-22" y="-22" width="44" height="44" clip-path="url(#face-clip)"/></g>
+          </svg>
+        </div>
+
+        <div class="tv-foot">
+          <div class="kid">
+            <img class="kid-face" src="../img/kid-pigtails.webp" width="48" height="48" alt="">
+            <div>
+              <strong>Mia</strong>
+              <span class="reward" id="reward"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4 3 20h18L12 4zm0 6 4 10H8l4-10z"/></svg>Sortie au parc <span class="earned-tag">gagnée</span></span>
+            </div>
+          </div>
+          <div class="score" aria-live="polite">
+            <span class="pct" id="pct">43&nbsp;%</span>
+            <span class="bar" aria-hidden="true"><i id="bar"></i></span>
+          </div>
+        </div>
+      </div>
+      <p class="demo-caption">Une maquette fonctionnelle de l'écran Apple TV. Cochez cinq jours et Mia atteint la récompense qu'elle a choisie. Cochez les sept et elle décroche la couronne.</p>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <ul class="facts">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Gratuit, sans publicité</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Aucun compte pour les enfants</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>En français canadien et en anglais</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>iPhone, iPad, Apple TV, tablette Fire, Fire TV</li>
   </ul>
-  <p class="note">Gratuit. Sans publicité, sans abonnement, sans achat intégré.</p>
-  <p style="margin:14px 0 0"><a href="tableau-de-motivation.html"><strong>Tableau gratuit à imprimer pour 2 à 5 ans →</strong></a>
-    &nbsp;<span class="note">les mêmes objectifs en images, pour le frigo</span></p>
-
-  <h2>Pourquoi le téléviseur</h2>
-  <p>
-    La plupart des tableaux de tâches vivent dans le téléphone d'un parent —
-    c'est-à-dire au seul endroit qu'un enfant de quatre ans ne regarde jamais.
-    Un tableau en papier sur le frigo fonctionne mieux pour exactement cette
-    raison : il est dans la pièce. FamilyQuest met le tableau sur l'écran
-    autour duquel la famille se rassemble déjà : la progression de chaque enfant
-    est visible sans que personne ait à demander, et les objectifs se valident
-    avec la télécommande.
-  </p>
-
-  <h2>Conçu pour les enfants qui ne lisent pas encore</h2>
-  <p>
-    Au lieu d'une liste écrite, chaque enfant a un avatar qui avance sur une
-    carte de quête. Valider un objectif le fait progresser ; atteindre la ligne
-    d'arrivée donne la récompense qu'il a choisie lui-même, et aller plus loin
-    donne une couronne et un bonus. Un enfant de trois ans comprend d'un coup
-    d'œil comment va sa semaine, et c'est tout le but.
-  </p>
-
-  <h2>Comment ça marche</h2>
-  <ol class="how">
-    <li>
-      <h3>Ajoutez vos enfants et choisissez leurs objectifs</h3>
-      <p>Se brosser les dents deux fois par jour, ranger les jouets, manger les
-      légumes. Des objectifs à cocher, ou une évaluation à quatre niveaux pour
-      les plus flous, comme « comment s'est passé le partage aujourd'hui ? ».</p>
-    </li>
-    <li>
-      <h3>Laissez-les choisir la récompense</h3>
-      <p>Un enfant qui a choisi sa récompense s'intéresse à sa carte. Donnez plus
-      de poids aux objectifs qui comptent le plus, mettez-en un en pause pour les
-      vacances, ou donnez-lui une date de fin s'il se termine : école, garderie,
-      session de natation.</p>
-    </li>
-    <li>
-      <h3>Regardez la semaine se remplir</h3>
-      <p>Sur un téléphone, une tablette ou la télé. À la fin de la semaine, le
-      résultat est figé et conservé : une bonne semaine reste une bonne semaine,
-      même si vous changez les objectifs après.</p>
-    </li>
-  </ol>
-
-  <h2>Où ça fonctionne</h2>
-  <p>
-    iPhone, iPad, Apple TV, tablette Fire et Fire TV — en français canadien et en
-    anglais. Deux parents peuvent partager une même famille avec un code
-    d'invitation à six chiffres, et un téléviseur se joint en se jumelant avec un
-    code affiché à l'écran.
-  </p>
-
-  <h2 id="confidentialite">Confidentialité</h2>
-  <div class="privacy">
-    <p>
-      <strong>Les enfants n'ont pas de compte.</strong> Un parent se connecte ;
-      les enfants n'existent qu'à l'intérieur des données de leur propre famille.
-    </p>
-    <p>
-      <strong>Aucun identifiant publicitaire, jamais.</strong> Aucun pistage, et
-      rien de vendu ni partagé avec des tiers. L'app note quelles plateformes une
-      famille utilise — une liste comme « iPhone » et « Apple TV ». Aucun
-      identifiant d'appareil, et jamais le nom de votre appareil.
-    </p>
-    <p style="margin-bottom:0">
-      Tous les détails dans la
-      <a href="privacy.html">politique de confidentialité</a>.
-    </p>
-  </div>
-
-  <h2>Questions</h2>
-  <div class="faq">
-    <details>
-      <summary>C'est vraiment gratuit ?</summary>
-      <p>Oui — gratuit, sans publicité, sans abonnement et sans achat
-      intégré.</p>
-    </details>
-    <details>
-      <summary>Est-ce que ça marche pour un enfant qui ne lit pas ?</summary>
-      <p>C'est pour ça que l'app existe. La carte de quête est en images, pas en
-      texte, donc un enfant de trois ou quatre ans suit sa propre progression
-      sans rien lire.</p>
-    </details>
-    <details>
-      <summary>Les deux parents peuvent-ils l'utiliser ?</summary>
-      <p>Oui. Le deuxième parent rejoint la même famille avec un code
-      d'invitation à six chiffres et les deux téléphones restent
-      synchronisés.</p>
-    </details>
-    <details>
-      <summary>Y a-t-il une version Android ?</summary>
-      <p>La version Android est en test fermé et n'est pas encore sur Google
-      Play. Les versions tablette Fire et Fire TV sont des versions Android et
-      sont disponibles dès maintenant sur l'Amazon Appstore.</p>
-    </details>
-    <details>
-      <summary>Que devient une semaine une fois terminée ?</summary>
-      <p>Elle est figée et conservée telle quelle. Modifier des objectifs plus
-      tard ne réécrit jamais une semaine que votre enfant a déjà terminée.</p>
-    </details>
-  </div>
-
-  <footer>
-    <p>
-      FamilyQuest — <a href="support.html">Soutien</a> ·
-      <a href="privacy.html">Confidentialité</a> ·
-      <a href="delete-account.html">Supprimer votre compte</a>
-    </p>
-    <p>© 2026 Ludovic Zammit</p>
-  </footer>
-
 </div>
+
+<section class="sec tv-sec" id="tv">
+  <div class="sec-in split">
+    <figure class="tv-frame reveal" style="margin:0">
+      <img src="../shots/tv-dashboard.png" width="1200" height="675" loading="lazy" alt="FamilyQuest sur un téléviseur : la carte de quête partagée, la bande des jours avec jeudi en évidence, et les cartes de progression de deux enfants">
+      <figcaption>Apple TV, vrai écran</figcaption>
+      <span class="stand" aria-hidden="true"></span>
+    </figure>
+    <div class="copy reveal">
+      <p class="kicker">Pourquoi le téléviseur</p>
+      <h2>Le tableau est dans la pièce, pas dans une poche</h2>
+      <p>La plupart des tableaux de tâches vivent dans le téléphone d'un parent, c'est-à-dire au seul endroit qu'un enfant de quatre ans ne regarde jamais. Un tableau en papier sur le frigo fonctionne mieux pour exactement cette raison : il est dans la pièce.</p>
+      <p>FamilyQuest met le tableau sur l'écran autour duquel la famille se rassemble déjà. La progression de chaque enfant est visible sans que personne ait à demander, et les objectifs se cochent avec la télécommande.</p>
+      <ul class="check-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Apple TV et Fire TV, configurables avec la télécommande seule</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Synchronisé en direct avec tous les téléphones de la famille</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Les résultats du dimanche s'affichent aussi sur le grand écran</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec principles" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="sec-in">
+    <div class="sec-head">
+      <p class="kicker">Conçu pour un enfant qui ne lit pas encore</p>
+      <h2>Trois idées, aucune lecture requise</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-art" aria-hidden="true">
+          <svg viewBox="0 0 300 120"><path d="M20 90C80 120 120 30 170 60s60 40 110-30" fill="none" stroke="#b9885a" stroke-width="18" stroke-linecap="round"/><path d="M20 90C80 120 120 30 170 60s60 40 110-30" fill="none" stroke="#f1e1bd" stroke-width="12" stroke-linecap="round"/><circle cx="20" cy="90" r="7" fill="#fff"/><circle cx="280" cy="30" r="13" fill="#fff"/><path d="M280 24l3 4.5 5-3-1.5 8h-13l-1.5-8 5 3z" fill="#f2b93b"/><circle cx="150" cy="56" r="17" fill="#fff"/><circle cx="150" cy="56" r="13" fill="#f0655e"/></svg>
+        </div>
+        <h3>Un sentier, pas une liste</h3>
+        <p>Chaque objectif accompli fait avancer l'avatar sur la carte. Un enfant de trois ans sait lire une position sur un sentier bien avant un pourcentage.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-art" aria-hidden="true">
+          <div class="mini-week"><i style="--c:var(--mon)"></i><i style="--c:var(--tue)"></i><i style="--c:var(--wed)"></i><i class="tod" style="--c:var(--thu)"></i><i class="dim" style="--c:var(--fri)"></i><i class="dim" style="--c:var(--wkd)"></i><i class="dim" style="--c:var(--wkd-2)"></i></div>
+        </div>
+        <h3>La semaine est l'unité</h3>
+        <p>Sept jours, une couleur chacun, aujourd'hui mis en relief. Quand le dimanche se termine, le résultat est figé et conservé. Une bonne semaine reste une bonne semaine.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-art" aria-hidden="true">
+          <svg viewBox="0 0 300 120"><path d="M110 100V30" stroke="#1b2130" stroke-width="4" stroke-linecap="round"/><path d="M110 30h44v30h-44z" fill="#fff"/><path d="M110 30h11v10h-11zM132 30h11v10h-11zM121 40h11v10h-11zM143 40h11v10h-11zM110 50h11v10h-11zM132 50h11v10h-11z" fill="#1b2130"/><circle cx="200" cy="60" r="30" fill="#fff"/><path d="M200 40l7 9 11-7-4 20h-28l-4-20 11 7z" fill="#f2b93b"/></svg>
+        </div>
+        <h3>Une récompense qu'ils ont choisie</h3>
+        <p>La ligne d'arrivée, c'est la récompense que l'enfant a choisie. Aller plus loin, et une couronne avec un bonus l'attend au-delà.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec how" id="how">
+  <div class="sec-in">
+    <div class="sec-head">
+      <p class="kicker">Comment ça marche</p>
+      <h2>Une soirée pour tout régler, puis il ne reste qu'à cocher</h2>
+      <p>De vrais écrans de l'app iPhone, avec une vraie semaine dedans.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="phone"><img src="../shots/ios-home-french.png" width="600" height="1304" loading="lazy" alt="L'écran de la famille : deux enfants avec leurs avatars et le pourcentage de la semaine, et la carte de quête partagée en dessous"></div>
+        <span class="n" aria-hidden="true">1</span>
+        <h3>Ajoutez vos enfants et leurs objectifs</h3>
+        <p>Se brosser les dents deux fois par jour, ranger les jouets, manger les légumes. Des objectifs à cocher, ou une évaluation amicale à quatre niveaux pour les plus flous, comme « comment s'est passé le partage aujourd'hui ? ». Une bibliothèque d'objectifs de départ vous lance en quelques minutes.</p>
+      </li>
+      <li class="step reveal">
+        <div class="phone"><img src="../shots/ios-kid-detail.png" width="600" height="1304" loading="lazy" alt="L'écran d'un enfant : sa carte de quête, la récompense visée, et une grille d'objectifs avec une case par jour"></div>
+        <span class="n" aria-hidden="true">2</span>
+        <h3>Laissez-les choisir la récompense</h3>
+        <p>Un enfant qui a choisi sa récompense s'intéresse à sa carte. Donnez plus de poids aux objectifs qui comptent le plus, mettez-en un en pause pour les vacances, ou donnez-lui une date de fin s'il se termine : école, garderie, session de natation.</p>
+      </li>
+      <li class="step reveal">
+        <div class="phone"><img src="../shots/ios-ceremony.png" width="600" height="1304" loading="lazy" alt="La cérémonie du dimanche : le résultat de la semaine dernière pour chaque enfant, avec la récompense gagnée"></div>
+        <span class="n" aria-hidden="true">3</span>
+        <h3>Regardez la semaine se remplir</h3>
+        <p>Sur un téléphone, une tablette ou la télé. À la fin de la semaine, le résultat est figé et conservé : une bonne semaine reste une bonne semaine, même si vous changez les objectifs après. Le dimanche, on compte ensemble.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec get" id="get" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="sec-in">
+    <div class="sec-head">
+      <p class="kicker">Où ça fonctionne</p>
+      <h2>Sur tous les écrans de la maison</h2>
+    </div>
+    <div class="devices">
+      <a class="device reveal" href="https://apps.apple.com/ca/app/familyquest/id6793959911">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+        <strong>iPhone et iPad</strong>
+        <span>App Store <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="device reveal" href="https://apps.apple.com/ca/app/familyquest-tv/id6793960645">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <strong>Apple TV</strong>
+        <span>App Store <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="device reveal" href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="2" width="17" height="20" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+        <strong>Tablette Fire</strong>
+        <span>Amazon Appstore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="device reveal" href="https://www.amazon.com/gp/product/mas-dl?p=com.zammit.familyquest.tv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6.5 13.5h4" stroke-width="2.4"/></svg>
+        <strong>Fire TV</strong>
+        <span>Amazon Appstore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+    <p class="fine">La version pour téléphones Android est en test fermé sur Google Play et n'est pas encore publique. Deux parents partagent une même famille avec un code d'invitation à six chiffres, et un téléviseur se joint en se jumelant avec un code affiché à l'écran. Tout est en français canadien et en anglais, sur chaque plateforme.</p>
+  </div>
+</section>
+
+<section class="sec privacy-sec" id="confidentialite">
+  <div class="sec-in">
+    <div class="privacy-card night reveal">
+      <p class="kicker">Confidentialité</p>
+      <h2>Les enfants n'ont pas de compte</h2>
+      <div class="two">
+        <p><strong>Un parent se connecte.</strong> Les enfants n'existent qu'à l'intérieur des données de leur propre famille, et seule la famille peut les voir.</p>
+        <p><strong>Aucun identifiant d'appareil, jamais.</strong> Aucun pistage, et rien de vendu ni partagé avec des tiers. L'app note quelles plateformes une famille utilise, une courte liste comme « iPhone » et « Apple TV », et rien qui puisse désigner un appareil ou une personne.</p>
+      </div>
+      <a class="link-arrow" href="privacy.html">Lire la politique de confidentialité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq-sec">
+  <div class="sec-in">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>C'est vraiment gratuit ?</summary>
+        <p>Oui — gratuit, sans publicité, sans abonnement et sans achat intégré.</p>
+      </details>
+      <details>
+        <summary>Est-ce que ça marche pour un enfant qui ne lit pas ?</summary>
+        <p>C'est pour ça que l'app existe. La carte de quête est en images, pas en texte, donc un enfant de trois ou quatre ans suit sa propre progression sans rien lire.</p>
+      </details>
+      <details>
+        <summary>Les deux parents peuvent-ils l'utiliser ?</summary>
+        <p>Oui. Le deuxième parent rejoint la même famille avec un code d'invitation à six chiffres et les deux téléphones restent synchronisés.</p>
+      </details>
+      <details>
+        <summary>Y a-t-il une version Android ?</summary>
+        <p>La version Android est en test fermé et n'est pas encore sur Google Play. Les versions tablette Fire et Fire TV sont des versions Android et sont disponibles dès maintenant sur l'Amazon Appstore.</p>
+      </details>
+      <details>
+        <summary>Que devient une semaine une fois terminée ?</summary>
+        <p>Elle est figée et conservée telle quelle. Modifier des objectifs plus tard ne réécrit jamais une semaine que votre enfant a déjà terminée.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="sec-in">
+    <a class="brand" href="./" aria-label="FamilyQuest, accueil">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="8" fill="#4fc46a"/><path d="M6 20c4-8 8 4 12-2s2-8 4-10" fill="none" stroke="#f1e1bd" stroke-width="3.2" stroke-linecap="round"/><circle cx="20" cy="15" r="3.2" fill="#fff"/><circle cx="20" cy="15" r="1.6" fill="#f0655e"/></svg>
+      <span>FamilyQuest</span>
+    </a>
+    <nav aria-label="Pied de page">
+      <a href="tour.html">Comment ça marche</a>
+      <a href="tableau-de-motivation.html">Tableau à imprimer</a>
+      <a href="tableau-des-taches-tele.html">Le tableau des tâches à la télé</a>
+      <a href="support.html">Soutien</a>
+      <a href="privacy.html">Confidentialité</a>
+      <a href="delete-account.html">Supprimer votre compte</a>
+      <a href="../" lang="en" hreflang="en">English</a>
+    </nav>
+    <p class="copy-line">© 2026 Ludovic Zammit. Fait à Montréal.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
 </body>
 </html>
